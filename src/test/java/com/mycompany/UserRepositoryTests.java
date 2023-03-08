@@ -33,6 +33,7 @@ public class UserRepositoryTests {
 
     @Test
     public void testListAll() {
+
         Iterable<User> users = repo.findAll();
         Assertions.assertThat(users).hasSizeGreaterThan(0);
 
